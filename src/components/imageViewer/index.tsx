@@ -1,14 +1,17 @@
-import styled from "styled-components"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
+import { CSSProperties } from "react"
 
-const ImageViewer = styled(Image)`
-    pointer-events: none;
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-`
+export default function ImageViewer(props: {src: string | StaticImageData, alt: string, height: number, width: number}) {
+    
+    const s: CSSProperties = {
+        pointerEvents: "none",
+        userSelect: "none",
+        MozUserSelect: "none",
+        WebkitUserSelect: "none",
+        msUserSelect: "none"
+    }
 
-export default ImageViewer
+    return(
+        <Image style={s} src={props.src} alt={props.alt} height={props.height} width={props.width}/>
+    )
+}

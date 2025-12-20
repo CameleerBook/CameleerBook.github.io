@@ -1,0 +1,12 @@
+@use '../../../theme/color';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: 
+        linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+

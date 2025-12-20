@@ -1,25 +1,24 @@
 "use client"
 
-import styled from "styled-components"
-import Color from "@/theme/color"
 import { pageList } from "@/utils/pages"
-import NavButton from "./NavButton"
-import TitleImage from "./TitleImage"
+import NavButton from "../navButton"
+import TitleImage from "../titleImage"
+import styles from "./index.module.scss"
 
 export default function NavigationBar() {
 	let i = 0
 
 	return(
-		<Container>
+		<div className={styles.container}>
 			<TitleImage/>
-			<ButtonsContainer>
+			<div>
 				{ pageList.map(p => <NavButton key={i++} page={p} />) }
-			</ButtonsContainer>
-		</Container>
+			</div>
+		</div>
 	)
 }
 
-const Container = styled.div`
+/*const Container = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -39,3 +38,4 @@ const ButtonsContainer = styled.div`
 	flex-direction: row;
 	align-items: center;
 `
+*/
