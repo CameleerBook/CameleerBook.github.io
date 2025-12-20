@@ -1,4 +1,5 @@
 @use '@/theme/color';
+@use '@/theme/breakpoints';
 
 %base {
     display: flex;
@@ -11,14 +12,31 @@
     background-image: 
         linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
     padding: 20px;
+
+    @media (width < breakpoints.$md) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 %sideItem {
-    width: 25%;
+    @media (width >= breakpoints.$md) {
+        width: 25%;
+    }
+
+    @media (width < breakpoints.$md) {
+        width: 50%;
+    }
 }
 
 %centerItem {
-    width: 50%;
+    @media (width >= breakpoints.$md) {
+        width: 50%;
+    }
+
+    @media (width < breakpoints.$md) {
+        width: 100%;
+    }
 }
 
 .titleItem {
@@ -28,13 +46,26 @@
 .buttonList {
     @extend %base;
     @extend %centerItem;
-    gap: 32px;
-    justify-content: center;
+
+    @media (width >= breakpoints.$md) {
+        gap: 32px;
+        justify-content: center;
+    }
+
+    @media (width < breakpoints.$md) {
+        justify-content: space-between;
+    }
+
 }
 
 .modeItem {
     @extend %sideItem;
     display: flex;
     justify-content: end;
+}
+
+.titleModeContainer {
+    @extend %base;
+    width: 100%;
 }
 

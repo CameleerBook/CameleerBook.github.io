@@ -1,0 +1,7 @@
+@use '@/theme/breakpoints';
+
+.container {
+    @media (width < breakpoints.$md) {
+        display: none;
+    }
+}
