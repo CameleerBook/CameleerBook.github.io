@@ -1,8 +1,11 @@
-import ImageViewer from "../../imageViewer"
 import CamelTitle from "@/assets/cameltitle.png"
+import Image from "next/image"
+import styles from "./index.module.scss"
 
 export default function TitleImage() {
+    const alt = "Title Icon"
+
     return(
-        <ImageViewer src={CamelTitle} alt="Title Icon" height={75} width={340}/>
+        <Image src={CamelTitle} alt={alt} className={styles.container}/>
     )
 }

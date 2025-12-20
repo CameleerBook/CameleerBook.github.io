@@ -1,0 +1,17 @@
+@use '@/theme/imageViewer';
+@use '@/theme/breakpoints';
+
+.container {
+    @extend %viewer;
+
+    @media (width >= breakpoints.$lg) {
+        height: 50px;
+        width: 230px;
+    }
+
+    @media (width < breakpoints.$lg) {
+        height: 25px;
+        width: 115px;
+    }
+
+}

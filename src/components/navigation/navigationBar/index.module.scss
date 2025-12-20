@@ -1,12 +1,30 @@
-@use '../../../theme/color';
+@use '@/theme/color';
 
-.container {
+%base {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.container {
+    @extend %base;
     background-image: 
         linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
-    padding: 0px 20px;
-    justify-content: space-between;
+    padding: 20px;
+}
+
+.sideItem {
+    width: 25%;
+}
+
+%centerItem {
+    width: 50%;
+}
+
+.buttonList {
+    @extend %base;
+    @extend %centerItem;
+    gap: 16px;
+    justify-content: center;
 }
 

@@ -10,32 +10,15 @@ export default function NavigationBar() {
 
 	return(
 		<div className={styles.container}>
-			<TitleImage/>
-			<div>
+			<div className={styles.sideItem}>
+				<TitleImage/>
+			</div>
+			<div className={styles.buttonList}>
 				{ pageList.map(p => <NavButton key={i++} page={p} />) }
+			</div>
+			<div className={styles.sideItem}>
+				Light
 			</div>
 		</div>
 	)
 }
-
-/*const Container = styled.div`
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 150px;
-	background-image:
-		linear-gradient(to Right, ${Color.primaryLight}, ${Color.primaryDark});
-	padding-left: 20px;
-	padding-right: 20px;
-	justify-content: space-between;
-`
-
-const ButtonsContainer = styled.div`
-	height: 100%;
-	width: 250px;
-	justify-content: center;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-`
-*/
