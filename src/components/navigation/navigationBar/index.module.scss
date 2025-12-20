@@ -13,7 +13,7 @@
     padding: 20px;
 }
 
-.sideItem {
+%sideItem {
     width: 25%;
 }
 
@@ -21,10 +21,20 @@
     width: 50%;
 }
 
+.titleItem {
+    @extend %sideItem;
+}
+
 .buttonList {
     @extend %base;
     @extend %centerItem;
-    gap: 16px;
+    gap: 32px;
     justify-content: center;
+}
+
+.modeItem {
+    @extend %sideItem;
+    display: flex;
+    justify-content: end;
 }
 
