@@ -2,7 +2,7 @@
 
 import { pageList } from "@/utils/pages"
 import NavButton from "./navButton"
-import TitleImage from "./titleImage"
+import TitleImage from "../titleImage"
 import styles from "./index.module.scss"
 import ModeButton from "./modeButton"
 import PhoneOnly from "./utils/phoneOnly"

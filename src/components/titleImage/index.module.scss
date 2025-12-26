@@ -1,8 +1,6 @@
 @use '@/theme/imageViewer';
 @use '@/theme/breakpoints';
 
-//*breakpoints.$md <= 
-
 .container {
     @extend %viewer;
 
@@ -15,10 +13,5 @@
         height: 40px;
         width: 185px;
     }
-
-    /*@media (width < breakpoints.$md) {
-        height: 25px;
-        width: 115px;
-    }*/ 
 
 }
