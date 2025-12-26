@@ -1,12 +1,12 @@
 "use client"
 
 import { pageList } from "@/utils/pages"
-import NavButton from "../navButton"
-import TitleImage from "../titleImage"
+import NavButton from "./navButton"
+import TitleImage from "./titleImage"
 import styles from "./index.module.scss"
-import ModeButton from "../modeButton"
-import PhoneOnly from "../utils/phoneOnly"
-import PhoneHide from "../utils/phoneHide"
+import ModeButton from "./modeButton"
+import PhoneOnly from "./utils/phoneOnly"
+import PhoneHide from "./utils/phoneHide"
 
 export default function NavigationBar() {
 	return(
