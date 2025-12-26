@@ -1,5 +1,6 @@
 @use '@/theme/color';
 @use '@/theme/breakpoints';
+@use '@/theme/global';
 
 %base {
     display: flex;
@@ -11,7 +12,7 @@
     @extend %base;
     background-image: 
         linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
-    padding: 20px;
+    padding: global.$padding;
 
     @media (width < breakpoints.$md) {
         flex-direction: column;

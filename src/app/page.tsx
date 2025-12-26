@@ -1,5 +1,30 @@
-export default function Home() {
+import CoverImage from "@/components/coverImage";
+import styles from "./index.module.scss"
+import Button from "@/components/button";
+
+function ButtonContent() {
+  return(
+    <p>Read the PDF</p>
+  )
+}
+
+export default function HomePage() {
   return (
-    <div>Home Page</div>
+    <div className={styles.container}>
+      <div className={styles.base}>
+        <div>
+          <p>Learn Verification With Cameleer</p>
+          <p>Takes on the ambitious challenge of teaching automated deductive 
+              verification using fully automated tools. In this book, we prove
+              several OCaml implementations of classical algorithms and data
+              structures using the Cameleer tool.
+          </p>
+        </div>
+        <div>
+          <CoverImage/>
+          <Button content={<ButtonContent/>} onClick={() => {}} />
+        </div>
+      </div>
+    </div>
   );
 }
