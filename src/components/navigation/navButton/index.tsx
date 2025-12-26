@@ -5,18 +5,6 @@ import Link from "next/link";
 import Title3 from "../../text/title3";
 import Color from "@/theme/color";
 
-/*const Container = styled(Link)`
-    height: 100%;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    &:hover {
-        background-color: #ed853b;
-    }
-`*/
-
 export default function NavButton(props: { page: Page }) {
     const page = props.page
 
