@@ -1,5 +1,7 @@
+"use client"
+
 import { ReactNode } from "react"
-import "./index.module.scss"
+import styles from "./index.module.scss"
 
 interface ButtonProps {
     content: ReactNode,
@@ -8,7 +10,7 @@ interface ButtonProps {
 
 export default function Button(props: ButtonProps) {
     return(
-        <div onClick={props.onClick}>
+        <div onClick={() => props.onClick} className={styles.container}>
             {props.content}
         </div>
     )

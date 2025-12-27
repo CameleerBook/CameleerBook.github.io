@@ -1,10 +1,14 @@
+"use client"
+
 import CoverImage from "@/components/coverImage";
 import styles from "./index.module.scss"
 import Button from "@/components/button";
 
 function ButtonContent() {
   return(
-    <p>Read the PDF</p>
+    <div className={styles.button}>
+      <p>Read the PDF</p>
+    </div>
   )
 }
 
@@ -20,7 +24,7 @@ export default function HomePage() {
               structures using the Cameleer tool.
           </p>
         </div>
-        <div>
+        <div className={styles.imageContainer}>
           <CoverImage/>
           <Button content={<ButtonContent/>} onClick={() => {}} />
         </div>

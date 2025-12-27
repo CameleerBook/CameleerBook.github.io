@@ -9,4 +9,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: global.$maxwidth;
+    justify-self: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
