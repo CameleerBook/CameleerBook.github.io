@@ -1,7 +1,7 @@
 "use client"
 
 import CoverImage from "@/components/coverImage";
-import styles from "./index.module.scss"
+import styles from "./page.module.scss"
 import Button from "@/components/button";
 
 function ButtonContent() {
