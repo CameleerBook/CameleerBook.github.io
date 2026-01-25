@@ -1,5 +1,9 @@
+import PageWithTitleLayout from "@/components/pageWithTitleLayout";
+
 export default function About() {
   return (
-    <div>About Page</div>
+    <PageWithTitleLayout title={"About"}>
+      <p>Coming soon!</p>
+    </PageWithTitleLayout>
   );
 }

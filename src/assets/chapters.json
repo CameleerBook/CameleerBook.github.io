@@ -1,0 +1,292 @@
+[
+  {
+    "name": "I. Introduction",
+    "number": 1,
+    "icon": {
+      "name": "functions"
+    },
+    "proofs": [
+      {
+        "name": "Time Conversion",
+        "link": "1_time"
+      },
+      {
+        "name": "Count (Lists)",
+        "link": "2_count_list"
+      },
+      {
+        "name": "Count (Arrays)",
+        "link": "3_count_array"
+      }
+    ],
+    "exercises": []
+  },
+  {
+    "name": "II. Arithmetic",
+    "number": 2,
+    "icon": {
+      "name": "functions"
+    },
+    "proofs": [
+      {
+        "name": "Extended GCD (Functional)",
+        "link": "1_extended_gcd"
+      },
+      {
+        "name": "McCarthy's 91 Function",
+        "link": "2_mccarthy"
+      },
+      {
+        "name": "Euclidean Division (Imperative)",
+        "link": "3_eudiv"
+      },
+      {
+        "name": "Iterative Fibonacci",
+        "link": "4_fib"
+      },
+      {
+        "name": "Extended GCD (Imperative)",
+        "link": "5_extended_gcd2"
+      },
+      {
+        "name": "Fast Exponentiation (Imperative)",
+        "link": "6_imp_fastexp"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "Exercise 1",
+        "link": "1_eudiv_neg"
+      },
+      {
+        "name": "Exercise 2",
+        "link": "2_fun_eudiv"
+      },
+      {
+        "name": "Exercise 3",
+        "link": "3_fact"
+      },
+      {
+        "name": "Exercise 4",
+        "link": "4_trib"
+      },
+      {
+        "name": "Exercise 5",
+        "link": "5_fun_fastexp"
+      }
+    ]
+  },
+  {
+    "name": "III. Searching Algorithms",
+    "number": 3,
+    "icon": {
+      "name": "search"
+    },
+    "proofs": [
+      {
+        "name": "Linear Search (For Loop)",
+        "link": "1_lsearch_for"
+      },
+      {
+        "name": "Binary Search (Option Values)",
+        "link": "2_bsearch"
+      },
+      {
+        "name": "Ternary Search (Option Values)",
+        "link": "3_tsearch_opt"
+      },
+      {
+        "name": "Ternary Search (Exceptions)",
+        "link": "4_tsearch_exp"
+      },
+      {
+        "name": "Depth-First Search For Binary Trees",
+        "link": "5_btree_depth"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "Exercise 1",
+        "link": "1_lsearch_back"
+      },
+      {
+        "name": "Exercise 2",
+        "link": "2_rec_bsearch"
+      }
+    ]
+  },
+  {
+    "name": "IV. Sorting Algorithms",
+    "number": 4,
+    "icon": {
+      "name": "sort"
+    },
+    "proofs": [
+      {
+        "name": "Selection Sort (Functional)",
+        "link": "1_func_selsort"
+      },
+      {
+        "name": "Selection Sort (Tail Recursion)",
+        "link": "2_tail_selsort"
+      },
+      {
+        "name": "Merge Sort (Functional)",
+        "link": "3_func_mergesort"
+      },
+      {
+        "name": "Quick Sort (Functional)",
+        "link": "4_func_quicksort"
+      },
+      {
+        "name": "Quick Sort (Optimized Tail Recursion)",
+        "link": "5_tail_opt_quicksort"
+      },
+      {
+        "name": "Selection Sort (Polymorphic & Functional)",
+        "link": "6_poly_selsort"
+      },
+      {
+        "name": "Insertion Sort (Imperative)",
+        "link": "7_imp_insort"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "Exercise 1",
+        "link": "1_func_insort"
+      },
+      {
+        "name": "Exercise 2",
+        "link": "2_tail_opt_insort"
+      },
+      {
+        "name": "Exercise 3",
+        "link": "3_poly_insort"
+      },
+      {
+        "name": "Exercise 4",
+        "link": "4_tail_opt_selsort"
+      },
+      {
+        "name": "Exercise 5",
+        "link": "5_imp_selsort"
+      },
+      {
+        "name": "Exercise 6",
+        "link": "6_poly_mergesort"
+      },
+      {
+        "name": "Exercise 7",
+        "link": "7_tail_quicksort"
+      },
+      {
+        "name": "Exercise 8",
+        "link": "8_poly_quicksort"
+      }
+    ]
+  },
+  {
+    "name": "V. Data Structures",
+    "number": 5,
+    "icon": {
+      "name": "data_array"
+    },
+    "proofs": [
+      {
+        "name": "Persistent Queue",
+        "link": "persist_queue"
+      },
+      {
+        "name": "List Zipper",
+        "link": "list_zipper"
+      },
+      {
+        "name": "Same Fringe with Zippers",
+        "link": "tree_zipper"
+      },
+      {
+        "name": "Binary Search Tree",
+        "link": "bst"
+      },
+      {
+        "name": "Circular Queue",
+        "link": "circular_queue"
+      },
+      {
+        "name": "Resizeable Array",
+        "link": "resizeable_array"
+      },
+      {
+        "name": "Linked List",
+        "link": "linked_list"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "Exercise 1",
+        "link": "list_queue"
+      },
+          {
+        "name": "Exercise 2",
+        "link": "list_stack"
+      },
+      {
+        "name": "Exercise 3",
+        "link": "list_set"
+      }
+    ]
+  },
+  {
+    "name": "VI. Selected Topics",
+    "number": 6,
+    "icon": {
+      "name": "functions"
+    },
+    "proofs": [
+      {
+        "name": "Delannoy Numbers",
+        "link": "delannoy"
+      },
+      {
+        "name": "Binomial Coefficients",
+        "link": "binom"
+      },
+      {
+        "name": "Time Complexity: Linear Search",
+        "link": "time_comp"
+      }
+    ],
+    "exercises": []
+  },
+    {
+    "name": "Archived Proofs",
+    "number": 7,
+    "icon": {
+      "name": "functions"
+    },
+    "proofs": [
+      {
+        "name": "Binary Search (Exceptions)",
+        "link": "bsearch_exp"
+      },
+      {
+        "name": "Fermat's Little Theorem",
+        "link": "fermat"
+      },
+      {
+        "name": "Tail Recursive Insertion Sort",
+        "link": "tail_insort"
+      },
+      {
+        "name": "Tail Recursive Merge Sort",
+        "link": "tail_mergesort"
+      },
+      {
+        "name": "Optmized Tail Recursive Merge Sort",
+        "link": "tail_opt_mergesort"
+      }
+    ],
+    "exercises": []
+  }
+]

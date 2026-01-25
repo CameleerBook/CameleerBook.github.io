@@ -1,0 +1,16 @@
+@use "@/theme/global";
+
+.container {
+    @extend %centeredDiv;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.titleContainer {
+    padding: global.$lgPadding;
+}
+
+.contentContainer {
+    width: 100%;
+    height: 100%;
+}
