@@ -4,16 +4,29 @@ $primaryFont: Arial, Helvetica, sans-serif;
 
 %text {
     font-family: $primaryFont;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: color.$onSurface;
+    text-align: justify;
+    text-justify: auto;
 }
 
-.buttonText {
+%nonSelectable {
     @extend %text;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.buttonText1 {
+    @extend %nonSelectable;
+    font-size: 20px;
+    font-weight: 500;
+    color: color.$onSurfaceVariant;
+}
+
+.buttonText2 {
+    @extend %nonSelectable;
 }
 
 .bodyText1 {
@@ -30,11 +43,4 @@ $primaryFont: Arial, Helvetica, sans-serif;
     @extend %text;
     font-size: 20px;
     font-weight: 700;
-}
-
-.title3 {
-    @extend %text;
-    font-size: 20px;
-    font-weight: 500;
-    color: color.$onSurfaceVariant;
 }

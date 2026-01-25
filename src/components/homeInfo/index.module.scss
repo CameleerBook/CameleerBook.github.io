@@ -1,0 +1,9 @@
+@use '@/theme/global';
+
+.container {
+    height: 586px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: global.$smGap;
+}

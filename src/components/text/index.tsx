@@ -5,9 +5,15 @@ type Props = {
     children: ReactNode
 }
 
-export function ButtonText({children}: Props) {
+export function ButtonText1({children}: Props) {
     return(
-        <p className={styles.buttonText}>{children}</p>
+        <p className={styles.buttonText1}>{children}</p>
+    )
+}
+
+export function ButtonText2({children}: Props) {
+    return(
+        <p className={styles.buttonText2}>{children}</p>
     )
 }
 
@@ -20,11 +26,5 @@ export function BodyText1({children}: Props) {
 export function Title1({children}: Props) {
     return(
         <h1 className={styles.title1}>{children}</h1>
-    )
-}
-
-export function Title3({children}: Props) {
-    return(
-        <h3 className={styles.title3}>{children}</h3>
     )
 }

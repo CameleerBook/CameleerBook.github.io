@@ -1,6 +1,6 @@
 "use client"
 
-import { ButtonText } from "../text"
+import { ButtonText2 } from "../text"
 import styles from "./index.module.scss"
 
 interface ButtonProps {
@@ -11,7 +11,7 @@ interface ButtonProps {
 export default function Button({label, onClick}: ButtonProps) {
     return(
         <div onClick={onClick} className={styles.container}>
-            <ButtonText>{label}</ButtonText>
+            <ButtonText2>{label}</ButtonText2>
         </div>
     )
 }

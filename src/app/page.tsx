@@ -1,8 +1,8 @@
 "use client"
 
-import CoverImageCard from "@/components/coverImageCard";
 import styles from "./page.module.scss"
-import { BodyText1 } from "@/components/text";
+import CoverImageCard from "@/components/coverImageCard";
+import HomeInfo from "@/components/homeInfo";
 
 export default function HomePage() {
   return(
@@ -11,10 +11,7 @@ export default function HomePage() {
         <CoverImageCard/>
       </div>
       <div className={styles.rightItem}>
-        <BodyText1>
-          More than ever we, as a society, rely on software. Some of 
-          this software
-        </BodyText1>
+        <HomeInfo/>
       </div>
     </div>
   )
