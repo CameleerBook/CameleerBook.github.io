@@ -5,6 +5,12 @@ type Props = {
     children: ReactNode
 }
 
+export function ButtonText({children}: Props) {
+    return(
+        <p className={styles.bodyText1}>{children}</p>
+    )
+}
+
 export function BodyText1({children}: Props) {
     return(
         <p className={styles.bodyText1}>{children}</p>

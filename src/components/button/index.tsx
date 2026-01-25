@@ -1,17 +1,17 @@
 "use client"
 
-import { ReactNode } from "react"
+import { ButtonText } from "../text"
 import styles from "./index.module.scss"
 
 interface ButtonProps {
-    children: ReactNode,
+    label: string,
     onClick: () => void,
 }
 
-export default function Button({children, onClick}: ButtonProps) {
+export default function Button({label, onClick}: ButtonProps) {
     return(
-        <div onClick={() => onClick} className={styles.container}>
-            {children}
+        <div onClick={onClick} className={styles.container}>
+            <ButtonText>{label}</ButtonText>
         </div>
     )
 }

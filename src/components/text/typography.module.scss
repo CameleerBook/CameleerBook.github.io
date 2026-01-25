@@ -9,6 +9,13 @@ $primaryFont: Arial, Helvetica, sans-serif;
     color: color.$onSurface;
 }
 
+.buttonText {
+    @extend %text;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .bodyText1 {
     @extend %text;
 }
