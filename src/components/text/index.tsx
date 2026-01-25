@@ -7,7 +7,7 @@ type Props = {
 
 export function ButtonText({children}: Props) {
     return(
-        <p className={styles.bodyText1}>{children}</p>
+        <p className={styles.buttonText}>{children}</p>
     )
 }
 

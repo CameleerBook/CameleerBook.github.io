@@ -1,8 +1,9 @@
 @use '@/theme/color';
+@use '@/theme/global';
 
 .container {
     width: 100%;
     background-color: color.$surfaceVariant;
     color: color.$onSurfaceVariant;
-    padding: 20px;
+    padding: global.$lgPadding;
 }

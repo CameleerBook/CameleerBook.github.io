@@ -3,10 +3,10 @@
 
 .container {
     @extend %centeredDiv;
-    padding: global.$padding;
+    padding: global.$lgPadding;
     height: 100%;
     background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
-    gap: 64px;
+    gap: global.$lgGap;
 }
 
 %item {

@@ -12,11 +12,11 @@
     @extend %base;
     background-image: 
         linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
-    padding: global.$padding;
+    padding: global.$lgPadding;
 
     @media (width < breakpoints.$md) {
         flex-direction: column;
-        gap: 10px;
+        gap: global.$xsGap;
     }
 }
 
@@ -49,7 +49,7 @@
     @extend %centerItem;
 
     @media (width >= breakpoints.$md) {
-        gap: 32px;
+        gap: global.$mdGap;
         justify-content: center;
     }
 

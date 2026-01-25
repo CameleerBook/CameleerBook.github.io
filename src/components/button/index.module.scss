@@ -2,7 +2,7 @@
 @use '@/theme/global';
 
 .container {
-    padding: 12px;
+    padding: global.$mdPadding;
     background-color: color.$secondaryLight;
     border: 2px solid color.$secondaryDark;
     border-radius: global.$radius;
