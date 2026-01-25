@@ -4,14 +4,14 @@ import { ReactNode } from "react"
 import styles from "./index.module.scss"
 
 interface ButtonProps {
-    content: ReactNode,
+    children: ReactNode,
     onClick: () => void,
 }
 
-export default function Button(props: ButtonProps) {
+export default function Button({children, onClick}: ButtonProps) {
     return(
-        <div onClick={() => props.onClick} className={styles.container}>
-            {props.content}
+        <div onClick={() => onClick} className={styles.container}>
+            {children}
         </div>
     )
 }

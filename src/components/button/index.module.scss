@@ -1,8 +1,14 @@
 @use '@/theme/color';
+@use '@/theme/global';
 
 .container {
     padding: 12px;
     background-color: color.$secondaryLight;
     border: 2px solid color.$secondaryDark;
-    border-radius: 8px;
+    border-radius: global.$radius;
+    box-shadow: global.$shadow;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

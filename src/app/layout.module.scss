@@ -11,5 +11,6 @@
 .wrapper {
     height: 100%;
     width: 100%;
-    max-width: global.$maxwidth;
+    //max-width: global.$maxwidth;
+    align-self: center;
 } 

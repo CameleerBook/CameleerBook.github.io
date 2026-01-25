@@ -1,27 +1,26 @@
 @use '@/theme/global';
+@use '@/theme/color';
 
 .container {
+    @extend %centeredDiv;
     padding: global.$padding;
     height: 100%;
+    background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
+    gap: 64px;
 }
 
-.base {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: global.$maxwidth;
-    justify-self: center;
-}
-
-.button {
+%item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 50%;
 }
 
-.imageContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.leftItem {
+    @extend %item;
+    justify-content: end;
+}
+
+.rightItem {
+    @extend %item;
+    justify-content: start;
 }

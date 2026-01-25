@@ -1,0 +1,33 @@
+@use '@/theme/color';
+
+$primaryFont: Arial, Helvetica, sans-serif;
+
+%text {
+    font-family: $primaryFont;
+    font-size: 12px;
+    font-weight: 400;
+    color: color.$onSurface;
+}
+
+.bodyText1 {
+    @extend %text;
+}
+
+.title1 {
+    @extend %text;    
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title2 {
+    @extend %text;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title3 {
+    @extend %text;
+    font-size: 20px;
+    font-weight: 500;
+    color: color.$onSurfaceVariant;
+}

@@ -1,8 +1,11 @@
 @use '@/theme/imageViewer';
 @use '@/theme/breakpoints';
+@use '@/theme/global';
 
-.container {
+.image {
     @extend %viewer;
+    box-shadow: global.$shadow;
+    border-radius: global.$radius;
 
     width: 330px;
     height: 510px;
@@ -17,4 +20,11 @@
         width: 185px;
     }*/
 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
