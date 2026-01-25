@@ -1,0 +1,5 @@
+@use "@/theme/global";
+
+.container {
+    @extend %centeredDiv;
+}
