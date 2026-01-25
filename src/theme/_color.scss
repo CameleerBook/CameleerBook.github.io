@@ -1,5 +1,7 @@
 $primaryDark: #EC6A0E;
 $primaryLight: #F18B02;
+$primaryGradient: 
+    linear-gradient(to Right, $primaryLight, $primaryDark);
 
 $onPrimary: #FFFFFF;
 

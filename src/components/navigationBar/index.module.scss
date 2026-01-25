@@ -10,8 +10,7 @@
 
 .container {
     @extend %base;
-    background-image: 
-        linear-gradient(to Right, color.$primaryLight, color.$primaryDark);
+    background-image: color.$primaryGradient;
     padding: global.$lgPadding;
 
     @media (width < breakpoints.$md) {

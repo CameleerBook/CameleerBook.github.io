@@ -1,5 +1,15 @@
+@use "@/theme/color";
 @use "@/theme/global";
 
 .container {
     @extend %centeredDiv;
+    flex-direction: column;
+}
+
+.banner {
+    @extend %centeredDiv;
+    width: 320px;
+    height: 160px;
+    background-image: color.$primaryGradient;
+    border-radius: global.$radius;
 }
