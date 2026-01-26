@@ -48,7 +48,7 @@
     @extend %centerItem;
 
     @media (width >= breakpoints.$md) {
-        gap: global.$mdGap;
+        gap: global.$lgGap;
         justify-content: center;
     }
 
