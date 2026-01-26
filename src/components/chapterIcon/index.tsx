@@ -1,35 +1,36 @@
 import dynamic from "next/dynamic"
+import styles from "./index.module.scss"
 
-const ArchiveIcon = dynamic(
-    () => import("@/assets/icons/ArchiveIcon")
+const IntroductionIcon = dynamic(
+    () => import("react-icons/md").then(mod => mod.MdOutlineWavingHand)
 )
 
-const BookIcon = dynamic(
-    () => import("@/assets/icons/BookIcon")
-)
-
-const DataIcon = dynamic(
-    () => import("@/assets/icons/DataIcon")
-)
-
-const FunctionIcon = dynamic(
-    () => import("@/assets/icons/FunctionIcon")
+const ArithmeticIcon = dynamic(
+    () => import("react-icons/md").then(mod => mod.MdOutlineCalculate)
 )
 
 const SearchIcon = dynamic(
-    () => import("@/assets/icons/SearchIcon")
+    () => import("react-icons/md").then(mod => mod.MdOutlineSearch)
 )
 
 const SortIcon = dynamic(
-    () => import("@/assets/icons/SortIcon")
+    () => import("react-icons/md").then(mod => mod.MdOutlineSort)
+)
+
+const DataIcon = dynamic(
+    () => import("react-icons/md").then(mod => mod.MdOutlineDataArray)
 )
 
 const TopicIcon = dynamic(
-    () => import("@/assets/icons/TopicIcon")
+    () => import("react-icons/md").then(mod => mod.MdOutlineInterests)
+)
+
+const ArchiveIcon = dynamic(
+    () => import("react-icons/md").then(mod => mod.MdOutlineArchive)
 )
 
 const iconList = [
-    BookIcon, FunctionIcon, SearchIcon, SortIcon, DataIcon, 
+    IntroductionIcon, ArithmeticIcon, SearchIcon, SortIcon, DataIcon, 
     TopicIcon, ArchiveIcon
 ]
 
@@ -40,6 +41,6 @@ type Props = {
 export default function ChapterIcon({ chapterNumber }: Props) {
     const Icon = iconList[chapterNumber - 1]
     return (
-        <Icon/>
+        <Icon size={40} className={styles.icon}/>
     )
 }
