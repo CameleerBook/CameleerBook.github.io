@@ -12,8 +12,10 @@
     @extend %centeredDiv;
     width: 320px;
     height: 160px;
-    background-image: color.$primaryGradient;
+    background-color: color.$secondaryLight;
+    border: 2px solid color.$secondaryDark;
     border-radius: global.$radius;
+    box-shadow: global.$shadow;
 }
 
 .proofListContainer {
