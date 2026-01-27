@@ -4,6 +4,7 @@
     @extend %centeredDiv;
     flex-direction: column;
     justify-content: start;
+    overflow-y: auto;
 }
 
 .titleContainer {

@@ -21,3 +21,7 @@ export const AboutPage = {
 export const pageList : Page[] = [
     HomePage, GalleryPage, AboutPage
 ]
+
+export function getProofLink(link: string) {
+    return `/proofs/${link}.ml.html`
+}

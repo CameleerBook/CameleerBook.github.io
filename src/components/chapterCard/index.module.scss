@@ -4,6 +4,7 @@
 .container {
     @extend %centeredDiv;
     flex-direction: column;
+    justify-content: start;
 }
 
 .banner {
