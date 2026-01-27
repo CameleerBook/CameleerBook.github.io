@@ -1,6 +1,13 @@
+@use "@/theme/global";
+
 .container {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    gap: global.$xsGap;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

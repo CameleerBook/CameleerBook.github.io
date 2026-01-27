@@ -18,8 +18,12 @@ export default function ChapterCard({ chapter }: Props) {
             </div>
             <Title6>{chapter.name}</Title6>
             <div className={styles.proofListContainer}>
-                <ProofList list={chapter.proofs} title="Case Studies"/>
-                <ProofList list={chapter.exercises} title="Exercises"/>
+                <div className={styles.leftProofList}>
+                    <ProofList list={chapter.proofs} title="Case Studies"/>
+                </div>
+                <div className={styles.rightProofList}>
+                    <ProofList list={chapter.exercises} title="Exercises"/>
+                </div>
             </div>
         </div>
     )

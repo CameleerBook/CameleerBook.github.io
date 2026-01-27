@@ -16,15 +16,15 @@ export default function ProofList({ list, title }: Props) {
     return(
         <div className={styles.container}>
             <p>{`${list.length} ${title}`}</p>
-            <ul>
+            <div className={styles.list}>
                 {
                     list.map(e => 
-                        <li key={i++}>
+                        <div key={i++}>
                             <a href={getProofLink(e.link)} target="_blank">{e.name}</a>
-                        </li>
+                        </div>
                     )
                 }
-            </ul>
+            </div>
         </div>
     )
 }

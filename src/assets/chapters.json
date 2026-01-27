@@ -29,7 +29,7 @@
     },
     "proofs": [
       {
-        "name": "Extended GCD (Functional)",
+        "name": "Extended GCD (1)",
         "link": "1_extended_gcd"
       },
       {
@@ -37,7 +37,7 @@
         "link": "2_mccarthy"
       },
       {
-        "name": "Euclidean Division (Imperative)",
+        "name": "Euclidean Division",
         "link": "3_eudiv"
       },
       {
@@ -45,11 +45,11 @@
         "link": "4_fib"
       },
       {
-        "name": "Extended GCD (Imperative)",
+        "name": "Extended GCD (2)",
         "link": "5_extended_gcd2"
       },
       {
-        "name": "Fast Exponentiation (Imperative)",
+        "name": "Fast Exponentiation",
         "link": "6_imp_fastexp"
       }
     ],
@@ -84,23 +84,23 @@
     },
     "proofs": [
       {
-        "name": "Linear Search (For Loop)",
+        "name": "Linear Search",
         "link": "1_lsearch_for"
       },
       {
-        "name": "Binary Search (Option Values)",
+        "name": "Binary Search",
         "link": "2_bsearch"
       },
       {
-        "name": "Ternary Search (Option Values)",
+        "name": "Ternary Search (1)",
         "link": "3_tsearch_opt"
       },
       {
-        "name": "Ternary Search (Exceptions)",
+        "name": "Ternary Search (2)",
         "link": "4_tsearch_exp"
       },
       {
-        "name": "Depth-First Search For Binary Trees",
+        "name": "DFS (Bin. Trees)",
         "link": "5_btree_depth"
       }
     ],
@@ -123,31 +123,31 @@
     },
     "proofs": [
       {
-        "name": "Selection Sort (Functional)",
+        "name": "Selection Sort (1)",
         "link": "1_func_selsort"
       },
       {
-        "name": "Selection Sort (Tail Recursion)",
+        "name": "Selection Sort (2)",
         "link": "2_tail_selsort"
       },
       {
-        "name": "Merge Sort (Functional)",
+        "name": "Merge Sort",
         "link": "3_func_mergesort"
       },
       {
-        "name": "Quick Sort (Functional)",
+        "name": "Quick Sort (1)",
         "link": "4_func_quicksort"
       },
       {
-        "name": "Quick Sort (Optimized Tail Recursion)",
+        "name": "Quick Sort (2)",
         "link": "5_tail_opt_quicksort"
       },
       {
-        "name": "Selection Sort (Polymorphic & Functional)",
+        "name": "Selection Sort (3)",
         "link": "6_poly_selsort"
       },
       {
-        "name": "Insertion Sort (Imperative)",
+        "name": "Insertion Sort",
         "link": "7_imp_insort"
       }
     ],
@@ -253,7 +253,7 @@
         "link": "binom"
       },
       {
-        "name": "Time Complexity: Linear Search",
+        "name": "Time Complexity",
         "link": "time_comp"
       }
     ],
@@ -267,23 +267,23 @@
     },
     "proofs": [
       {
-        "name": "Binary Search (Exceptions)",
+        "name": "Binary Search (2)",
         "link": "bsearch_exp"
       },
       {
-        "name": "Fermat's Little Theorem",
+        "name": "Fermat's L.T.",
         "link": "fermat"
       },
       {
-        "name": "Tail Recursive Insertion Sort",
+        "name": "Insertion Sort (2)",
         "link": "tail_insort"
       },
       {
-        "name": "Tail Recursive Merge Sort",
+        "name": "Merge Sort (2)",
         "link": "tail_mergesort"
       },
       {
-        "name": "Optmized Tail Recursive Merge Sort",
+        "name": "Merge Sort (3)",
         "link": "tail_opt_mergesort"
       }
     ],
