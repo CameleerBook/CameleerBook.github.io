@@ -29,6 +29,12 @@ export function Title1({children}: Props) {
     )
 }
 
+export function Title2({children}: Props) {
+    return(
+        <h1 className={styles.title2}>{children}</h1>
+    )
+}
+
 export function Title6({children}: Props) {
     return(
         <h1 className={styles.title6}>{children}</h1>

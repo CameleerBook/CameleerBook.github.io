@@ -1,0 +1,8 @@
+@use "@/theme/global";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: global.$lgGap;
+    padding: global.$lgPadding;
+}

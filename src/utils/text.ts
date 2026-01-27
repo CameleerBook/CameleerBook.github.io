@@ -24,3 +24,35 @@ const PREFACE3 = `
 `
 
 export const prefaceParagraphs = [PREFACE1, PREFACE2, PREFACE3]
+
+export type Paragraph = {
+    title: string,
+    paragraphs: string[],
+}
+
+export const aboutPageParagraphs : Paragraph[] = [
+    {
+        title: "The authors",
+        paragraphs: [
+            `Pedro Gasparinho - Computer Science Master's student at NOVA SST.`,
+            `Mário Pereira - Assistant Professor at NOVA SST.`
+        ],
+    },
+    {
+        title: "The book and the website",
+        paragraphs: [`
+            "Learn Verification with Cameleer" is a project stemming from Pedro 
+            Gasparinho's Master's dissertation, which is also advised by Prof. 
+            Dr. Mário Pereira.
+        `],
+    },
+    {
+        title: "Acknowledgments",
+        paragraphs: [`
+            A special thanks to the Cameleer team for important feedback during
+            the development of this book and website, in particular, Ion 
+            Chirica, Tiago Soares, João Nini, Gonçalo Duarte, Keiko Tiago, Rui 
+            Xavier, Tiago Meirim.            
+        `],
+    },
+]

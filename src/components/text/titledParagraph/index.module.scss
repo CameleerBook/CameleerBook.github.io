@@ -1,0 +1,7 @@
+@use "@/theme/global";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: global.$xsGap;
+}

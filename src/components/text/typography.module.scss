@@ -39,6 +39,12 @@ $primaryFont: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
+.title2 {
+    @extend %text;    
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 .title6 {
     @extend %text;    
