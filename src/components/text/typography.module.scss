@@ -33,6 +33,11 @@ $primaryFont: Arial, Helvetica, sans-serif;
     @extend %text;
 }
 
+.bodyText1Alt {
+    @extend %text;
+    color: color.$onSurfaceVariant;
+}
+
 .title1 {
     @extend %text;    
     font-size: 28px;

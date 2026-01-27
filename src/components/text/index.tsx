@@ -23,6 +23,12 @@ export function BodyText1({children}: Props) {
     )
 }
 
+export function BodyText1Alt({children}: Props) {
+    return(
+        <p className={styles.bodyText1Alt}>{children}</p>
+    )
+}
+
 export function Title1({children}: Props) {
     return(
         <h1 className={styles.title1}>{children}</h1>
