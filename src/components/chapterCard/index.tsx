@@ -1,7 +1,8 @@
 import { Chapter } from "@/utils/chapters"
 import styles from "./index.module.scss"
 import ChapterIcon from "../chapterIcon"
-import { getProofLink } from "@/utils/pages"
+import { Title6 } from "../text"
+import ProofList from "./proofList"
 
 type Props = {
     chapter: Chapter
@@ -15,18 +16,10 @@ export default function ChapterCard({ chapter }: Props) {
             <div className={styles.banner}>
                 <ChapterIcon chapterNumber={chapter.number}/>
             </div>
-            <p>{chapter.name}</p>
-            <p>Case Studies</p>
-            <div>
-                <ul>
-                    {
-                        chapter.proofs.map(p => 
-                            <li key={i++}>
-                                <a href={getProofLink(p.link)} target="_blank">{p.name}</a>
-                            </li>
-                        )
-                    }
-                </ul>
+            <Title6>{chapter.name}</Title6>
+            <div className={styles.proofListContainer}>
+                <ProofList list={chapter.proofs} title="Case Studies"/>
+                <ProofList list={chapter.exercises} title="Exercises"/>
             </div>
         </div>
     )

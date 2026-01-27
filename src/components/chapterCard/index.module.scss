@@ -5,6 +5,7 @@
     @extend %centeredDiv;
     flex-direction: column;
     justify-content: start;
+    gap: global.$xsGap;
 }
 
 .banner {
@@ -13,4 +14,14 @@
     height: 160px;
     background-image: color.$primaryGradient;
     border-radius: global.$radius;
+}
+
+.proofListContainer {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+}
+
+.proofList {
+    width: 50%;
 }
