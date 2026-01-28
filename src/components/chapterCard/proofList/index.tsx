@@ -1,6 +1,7 @@
 import { CaseStudy } from "@/utils/chapters"
 import { getProofLink } from "@/utils/pages"
 import styles from "./index.module.scss"
+import { BodyText1 } from "@/components/text"
 
 type Props = {
     list: CaseStudy[],
@@ -15,7 +16,7 @@ export default function ProofList({ list, title }: Props) {
 
     return(
         <div className={styles.container}>
-            <p>{`${list.length} ${title}`}</p>
+            <BodyText1>{`${list.length} ${title}`}</BodyText1>
             <div className={styles.list}>
                 {
                     list.map(e => 

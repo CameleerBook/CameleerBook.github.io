@@ -8,19 +8,19 @@ const PREFACE1 = `
 `
 
 const PREFACE2 = `
-    There is a Latin saying that translates to "To err is human", and software
-    development is no exception. While making errors is human nature, even 
-    minor programming errors in safety-critical software can lead to 
-    catastrophic outcomes.
+    Unit testing by itself is insufficient to cover the unimaginable number of 
+    possible states in any industrial-grade software. We must resort to Formal 
+    Verification for better reliability guarantees. This field offers two main
+    families of tools: Proof assistants and automated tools. The former are
+    quite powerful, yet require considerable user interaction and expertise,
+    whereas the latter provide a more user-friendly experience, at the cost of
+    some proving capabilities.
 `
 
 const PREFACE3 = `
-    There is a Latin saying that translates to "To err is human", and software
-    development is no exception. While making errors is human nature, even 
-    minor programming errors in safety-critical software can lead to 
-    catastrophic outcomes. Given our ever-increasing dependency on software, 
-    in general, we must strive to increase the fidelity of safety-critical 
-    software.
+    In this book, we introduce Formal Verification through Cameleer, an 
+    automated verification tool for OCaml programs. Students will learn to
+    prove the implementations of well-known algorithms and data structures.
 `
 
 export const prefaceParagraphs = [PREFACE1, PREFACE2, PREFACE3]

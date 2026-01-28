@@ -31,12 +31,12 @@
 
 .leftProofList {
     @extend %proofList;
-    padding-left: 15px;
+    padding-left: 10px;
     justify-content: start;
 }
 
 .rightProofList {
     @extend %proofList;
-    padding-right: 15px;
+    padding-right: 10px;
     justify-content: end;
 }
