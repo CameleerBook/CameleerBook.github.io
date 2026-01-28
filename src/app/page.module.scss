@@ -7,12 +7,23 @@
     height: 100%;
     background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
     gap: global.$lgGap;
+
+    @media (width < 768px) {
+        height: auto;
+        flex-direction: column;
+        background: linear-gradient(0deg, color.$secondaryLight 50%, color.$surface 0%);
+    }
+
 }
 
 %item {
     display: flex;
     align-items: center;
     width: 50%;
+
+    @media (width < 768px) {
+        width: 100%;
+    }
 }
 
 .leftItem {

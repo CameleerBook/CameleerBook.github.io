@@ -1,4 +1,5 @@
 @use '@/theme/global';
+@use '@/theme/color';
 
 .container {
     height: 100%;
@@ -11,7 +12,6 @@
 .wrapper {
     height: 100%;
     width: 100%;
-    //max-width: global.$maxwidth;
     align-self: center;
     overflow-y: auto;
 }

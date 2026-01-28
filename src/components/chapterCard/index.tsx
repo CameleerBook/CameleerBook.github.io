@@ -1,6 +1,6 @@
 import { Chapter } from "@/utils/chapters"
 import styles from "./index.module.scss"
-import ChapterIcon from "../chapterIcon"
+import ChapterIcon from "./chapterIcon"
 import { Title6 } from "../text"
 import ProofList from "./proofList"
 

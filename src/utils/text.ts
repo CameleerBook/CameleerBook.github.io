@@ -34,7 +34,8 @@ export const aboutPageParagraphs : Paragraph[] = [
     {
         title: "The authors",
         paragraphs: [
-            `Pedro Gasparinho - Computer Science Master's student at NOVA SST.`,
+            `Pedro Gasparinho - Computer Science Master's student at NOVA 
+            School of Science and Technology (NOVA SST).`,
             `Mário Pereira - Assistant Professor at NOVA SST.`
         ],
     },
