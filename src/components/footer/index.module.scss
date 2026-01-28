@@ -1,5 +1,6 @@
 @use '@/theme/color';
 @use '@/theme/global';
+@use '@/theme/breakpoints';
 
 .container {
     width: 100%;
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (width < 768px) {
+    @media (width < breakpoints.$md) {
         flex-direction: column;
         gap: global.$smGap;
     }   

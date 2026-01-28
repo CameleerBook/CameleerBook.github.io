@@ -6,20 +6,8 @@
     @extend %viewer;
     box-shadow: global.$shadow;
     border-radius: global.$radius;
-
     width: 330px;
     height: 510px;
-
-    /*@media (width >= breakpoints.$lg) {
-        height: 50px;
-        width: 230px;
-    }
-
-    @media (width < breakpoints.$lg) {
-        height: 40px;
-        width: 185px;
-    }*/
-
 }
 
 .container {

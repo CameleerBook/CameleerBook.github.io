@@ -1,5 +1,6 @@
 @use '@/theme/global';
 @use '@/theme/color';
+@use '@/theme/breakpoints';
 
 .container {
     @extend %centeredDiv;
@@ -8,7 +9,7 @@
     background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
     gap: global.$lgGap;
 
-    @media (width < 768px) {
+    @media (width < breakpoints.$md) {
         height: auto;
         flex-direction: column;
         background: linear-gradient(0deg, color.$secondaryLight 50%, color.$surface 0%);
@@ -21,17 +22,24 @@
     align-items: center;
     width: 50%;
 
-    @media (width < 768px) {
+    @media (width < breakpoints.$md) {
         width: 100%;
+        justify-content: center;
     }
 }
 
 .leftItem {
     @extend %item;
-    justify-content: end;
+
+    @media (width >= breakpoints.$md) {
+        justify-content: end;
+    }
 }
 
 .rightItem {
     @extend %item;
-    justify-content: start;
+
+    @media (width >= breakpoints.$md) {
+        justify-content: start;
+    }
 }
