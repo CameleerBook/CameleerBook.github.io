@@ -40,11 +40,15 @@ export const aboutPageParagraphs : Paragraph[] = [
     },
     {
         title: "The book and the website",
-        paragraphs: [`
-            "Learn Verification with Cameleer" is a project stemming from Pedro 
+        paragraphs: [
+            `"Learn Verification with Cameleer" is a project stemming from Pedro 
             Gasparinho's Master's dissertation, which is also advised by Prof. 
-            Dr. Mário Pereira.
-        `],
+            Dr. Mário Pereira.`,
+            `This work is inspired by several algorithm design textbooks, most
+            notably "Apprendre à Programmer avec OCaml" by Sylvain Conchon and
+            Jean-Christophe Filliâtre, and "Algorithms" (4th edition) by Robert 
+            Sedgewick and Kevin Wayne.`
+        ],
     },
     {
         title: "Acknowledgments",

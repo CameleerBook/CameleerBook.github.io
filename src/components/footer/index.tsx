@@ -6,7 +6,7 @@ export default function Footer() {
         <div className={styles.container}>
             <BodyText1Alt>Draft Version: 27 Jan. 2026</BodyText1Alt>
             <BodyText1Alt>Pedro Gasparinho, Mário Pereira</BodyText1Alt>
-            <BodyText1Alt>Contact: p.gasparinho@fct.unl.pt</BodyText1Alt>
+            <BodyText1Alt>{"Contact: p.gasparinho { at } fct.unl.pt"}</BodyText1Alt>
         </div>
     )
 }
