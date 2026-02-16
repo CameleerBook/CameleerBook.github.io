@@ -8,6 +8,7 @@
     flex-grow: 1;
     background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
     gap: global.$lgGap;
+    height: auto;
 
     @media (width < breakpoints.$md) {
         height: auto;
@@ -21,6 +22,7 @@
     display: flex;
     align-items: center;
     width: 50%;
+    overflow-y: visible;
 
     @media (width < breakpoints.$md) {
         width: 100%;
