@@ -32,8 +32,8 @@ export default function RootLayout({
           <NavigationBar/>
           <div className={styles.wrapper}>
             {children}
+            <Footer/>
           </div>
-          <Footer/>
         </div>
       </body>
     </html>
