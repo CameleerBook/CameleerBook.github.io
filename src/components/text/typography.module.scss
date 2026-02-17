@@ -8,7 +8,9 @@ $primaryFont: Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-align: justify;
     text-justify: auto;
+}
 
+%automatic {
     @media (prefers-color-scheme: light) {
         color: color.$onSurface;
     }
@@ -16,50 +18,62 @@ $primaryFont: Arial, Helvetica, sans-serif;
     @media (prefers-color-scheme: dark) {
         color: color.$onSurfaceVariant;
     }
+}
 
+%light {
+    color: color.$onSurfaceVariant;
+}
+
+%dark {
+    color: color.$onSurface;
 }
 
 %nonSelectable {
-    @extend %text;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
 .buttonText1 {
+    @extend %text;
     @extend %nonSelectable;
+    @extend %light;
     font-size: 20px;
     font-weight: 500;
     color: color.$onSurfaceVariant;
 }
 
 .buttonText2 {
+    @extend %text;
     @extend %nonSelectable;
-    color: color.$onSurface;
+    @extend %dark;
 }
 
 .bodyText1 {
     @extend %text;
+    @extend %automatic;
 }
 
 .bodyText1Light {
     @extend %text;
-    color: color.$onSurfaceVariant;
+    @extend %light;
 }
 
 .bodyText1Dark {
     @extend %text;
-    color: color.$onSurface;
+    @extend %dark;
 }
 
 .title1 {
-    @extend %text;    
+    @extend %text;
+    @extend %automatic;
     font-size: 28px;
     font-weight: 700;
 }
 
 .title1Dark {
-    @extend %text;    
+    @extend %text;   
+    @extend %dark; 
     font-size: 28px;
     font-weight: 700;
     color: color.$onSurface;
@@ -67,13 +81,15 @@ $primaryFont: Arial, Helvetica, sans-serif;
 
 .title2 {
     @extend %text;    
+    @extend %automatic;
     font-size: 20px;
     font-weight: 600;
 }
 
 
 .title6 {
-    @extend %text;    
+    @extend %text;   
+    @extend %automatic; 
     font-size: 18px;
     font-weight: 600;
 }

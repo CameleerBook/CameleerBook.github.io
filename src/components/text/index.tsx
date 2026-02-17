@@ -25,7 +25,7 @@ export function BodyText1({children}: Props) {
 
 export function BodyText1Light({children}: Props) {
     return(
-        <p className={styles.BodyText1Light}>{children}</p>
+        <p className={styles.bodyText1Light}>{children}</p>
     )
 }
 
