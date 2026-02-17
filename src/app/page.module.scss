@@ -6,15 +6,32 @@
     @extend %centeredDiv;
     padding: global.$lgPadding;
     flex-grow: 1;
-    background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
     gap: global.$lgGap;
     height: auto;
 
-    @media (width < breakpoints.$md) {
-        flex-direction: column;
-        background: linear-gradient(0deg, color.$secondaryLight 50%, color.$surface 0%);
+    @media (width >= breakpoints.$md) {
+        @media (prefers-color-scheme: light) {
+            background: linear-gradient(90deg, color.$surface 50%, color.$secondaryLight 0%);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: linear-gradient(90deg, color.$surfaceVariant 50%, color.$secondaryLight 0%);
+        }
     }
 
+    @media (width < breakpoints.$md) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 767px) {
+        @media (prefers-color-scheme: light) {
+            background: linear-gradient(0deg, color.$secondaryLight 50%, color.$surface 0%);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: linear-gradient(0deg, color.$secondaryLight 50%, color.$surfaceVariant 0%);
+        }
+    }
 }
 
 %item {
