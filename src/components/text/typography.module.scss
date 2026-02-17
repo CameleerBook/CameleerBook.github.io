@@ -35,21 +35,34 @@ $primaryFont: Arial, Helvetica, sans-serif;
 
 .buttonText2 {
     @extend %nonSelectable;
+    color: color.$onSurface;
 }
 
 .bodyText1 {
     @extend %text;
 }
 
-.bodyText1Alt {
+.bodyText1Light {
     @extend %text;
     color: color.$onSurfaceVariant;
+}
+
+.bodyText1Dark {
+    @extend %text;
+    color: color.$onSurface;
 }
 
 .title1 {
     @extend %text;    
     font-size: 28px;
     font-weight: 700;
+}
+
+.title1Dark {
+    @extend %text;    
+    font-size: 28px;
+    font-weight: 700;
+    color: color.$onSurface;
 }
 
 .title2 {

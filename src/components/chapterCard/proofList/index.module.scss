@@ -1,4 +1,5 @@
 @use "@/theme/global";
+@use "@/theme/color";
 
 .container {
     display: flex;
@@ -10,4 +11,12 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    a:link {
+        color: cornflowerblue;
+    }
+
+    a:visited {
+        color: slateblue;
+    }
 }

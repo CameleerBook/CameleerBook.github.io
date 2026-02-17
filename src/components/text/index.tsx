@@ -23,15 +23,27 @@ export function BodyText1({children}: Props) {
     )
 }
 
-export function BodyText1Alt({children}: Props) {
+export function BodyText1Light({children}: Props) {
     return(
-        <p className={styles.bodyText1Alt}>{children}</p>
+        <p className={styles.BodyText1Light}>{children}</p>
+    )
+}
+
+export function BodyText1Dark({children}: Props) {
+    return(
+        <p className={styles.bodyText1Dark}>{children}</p>
     )
 }
 
 export function Title1({children}: Props) {
     return(
         <h1 className={styles.title1}>{children}</h1>
+    )
+}
+
+export function Title1Dark({children}: Props) {
+    return(
+        <h1 className={styles.title1Dark}>{children}</h1>
     )
 }
 

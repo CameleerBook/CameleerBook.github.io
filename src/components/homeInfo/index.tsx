@@ -1,4 +1,4 @@
-import { BodyText1, Title1 } from "@/components/text"
+import { BodyText1Dark, Title1Dark } from "@/components/text"
 import styles from "./index.module.scss"
 import { prefaceParagraphs } from "@/utils/text"
 
@@ -7,10 +7,10 @@ export default function HomeInfo() {
 
     return(
         <div className={styles.container}>
-            <Title1>Preface</Title1>
+            <Title1Dark>Preface</Title1Dark>
             {
                 prefaceParagraphs.map(p => 
-                    <BodyText1 key={i++}>{p}</BodyText1>
+                    <BodyText1Dark key={i++}>{p}</BodyText1Dark>
                 )
             }
         </div>
