@@ -5,8 +5,12 @@ export default function Footer() {
     return(
         <div className={styles.container}>
             <BodyText1Light>Pedro Gasparinho, Mário Pereira</BodyText1Light>
-            <BodyText1Light>{"Contact: p.gasparinho { at } fct.unl.pt"}</BodyText1Light>
-            <BodyText1Light>Draft Version: 27 Jan. 2026</BodyText1Light>
+            <div className={styles.contact}>
+                <BodyText1Light>Contacts:</BodyText1Light>
+                <BodyText1Light>{"p.gasparinho { at } campus.fct.unl.pt"}</BodyText1Light>
+                <BodyText1Light>{"mjp.pereira { at } fct.unl.pt"}</BodyText1Light>
+            </div>
+            <BodyText1Light>Draft Version: 14 Mar. 2026</BodyText1Light>
         </div>
     )
 }
