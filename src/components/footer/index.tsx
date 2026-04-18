@@ -10,7 +10,7 @@ export default function Footer() {
                 <BodyText1Light>{"p.gasparinho { at } campus.fct.unl.pt"}</BodyText1Light>
                 <BodyText1Light>{"mjp.pereira { at } fct.unl.pt"}</BodyText1Light>
             </div>
-            <BodyText1Light>Draft Version: 16 Apr. 2026</BodyText1Light>
+            <BodyText1Light>Draft Version: 18 Apr. 2026</BodyText1Light>
         </div>
     )
 }

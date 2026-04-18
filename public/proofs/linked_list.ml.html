@@ -72,12 +72,6 @@
 			<span class="logical">forall</span> f: (elt -> <span class="logical">bool</span>), r l: llist. filtered f r l ->
 				<span class="logical">forall</span> x: elt. mem x r -> f x *)</span>
 
-	<span class="contract">(*@ <span class="logical">axiom</span> filtered_idx :
-			<span class="logical">forall</span> f: (elt -> <span class="logical">bool</span>), r l: llist. filtered f r l ->
-				<span class="logical">forall</span> i. 0 &lt;= i &lt; len r -> 
-        <span class="logical">exists</span> i'. i &lt;= i' &lt; len l -> 
-          (get r i) = (get l i') *)</span>
-
   <span class="contract">(*@ <span class="logical">axiom</span> filtered_relative_pos : 
       <span class="logical">forall</span> f: (elt -> <span class="logical">bool</span>), r l: llist. filtered f r l ->
         <span class="logical">forall</span> i j. 0 &lt;= i &lt;= j &lt; len r -> 
@@ -114,8 +108,8 @@
       | Nil -> 0
       | Cons _ t -> 1 + len t *)</span>
   <span class="contract">(*@ <span class="logical">variant</span> l 
-      <span class="logical">ensures</span> l = Nil -> result = 0
-      <span class="logical">ensures</span> l &lt;> Nil -> result > 0 *)</span>
+      <span class="logical">ensures</span> l = Nil &lt;-> result = 0
+      <span class="logical">ensures</span> l &lt;> Nil &lt;-> result > 0 *)</span>
 
   <span class="keyword">let</span> length l = 
     <span class="keyword">let</span> <span class="keyword">rec</span> aux c = <span class="keyword">function</span>
@@ -128,8 +122,9 @@
   <span class="contract">(*@ r = len l
       <span class="logical">ensures</span> r = len l *)</span>
 
-  <span class="keyword">let</span>[@logic] is_empty l =
-    length l = 0
+  <span class="keyword">let</span>[@logic] is_empty = <span class="keyword">function</span>
+    | Nil -> <span class="keyword">true</span>
+    | _ -> <span class="keyword">false</span>
   <span class="contract">(*@ r = is_empty l 
       <span class="logical">ensures</span> r &lt;-> l = Nil *)</span>
 
@@ -167,7 +162,7 @@
       <span class="logical">forall</span> i. 0 &lt;= i &lt; len s -> 
         (get r i) = (get s (len s - 1 - i)) *)</span>
 
-  <span class="contract">(*@ <span class="logical">predicate</span> unchanged_ahead (r acc s: llist) =
+  <span class="contract">(*@ <span class="logical">predicate</span> valid_accumulator (r acc s: llist) =
       len r = len acc + len s &amp;&amp;
       <span class="logical">forall</span> i. len s &lt;= i &lt; len r -> 
         (get r i) = (get acc (i - len s)) *)</span>
@@ -184,7 +179,7 @@
     <span class="contract">(*@ r = aux acc s
         <span class="logical">ensures</span> len r = len acc + len s 
         <span class="logical">ensures</span> reversed_sub r s
-        <span class="logical">ensures</span> unchanged_ahead r acc s
+        <span class="logical">ensures</span> valid_accumulator r acc s
         <span class="logical">variant</span> s *)</span>
     <span class="keyword">in</span> aux Nil l
   <span class="contract">(*@ r = rev l
@@ -231,37 +226,26 @@
 				<span class="logical">variant</span> s
 				<span class="logical">ensures</span> len r = len acc + len s
         <span class="logical">ensures</span> mapped_sub f r s
-        <span class="logical">ensures</span> unchanged_ahead r acc s *)</span>
+        <span class="logical">ensures</span> valid_accumulator r acc s *)</span>
 		<span class="keyword">in</span> <span class="keyword">let</span> l' = rev l <span class="keyword">in</span> aux Nil f l'	
 	<span class="contract">(*@ r = map f l
 			<span class="logical">ensures</span> len r = len l
 			<span class="logical">ensures</span> <span class="logical">forall</span> i. 0 &lt;= i &lt; len l -> (f (get l i)) = (get r i) *)</span>
 
-  <span class="contract">(*@ <span class="logical">predicate</span> filtered_order_sub (r s: llist) = 
-      <span class="logical">forall</span> i j. 0 &lt;= i &lt;= j &lt; len r -> 
-        <span class="logical">exists</span> i' j'. i &lt;= i' &lt;= j' &lt; len s ->
-        (get r i) = (get s i') &amp;&amp; (get r j) = (get s j') *)</span>
-
-  <span class="contract">(*@ <span class="logical">predicate</span> filtered_sub (f: elt -> <span class="logical">bool</span>) (r acc s: llist) =
-      0 &lt;= len r &lt;= len acc + len s &amp;&amp;
-      <span class="logical">forall</span> x: elt. mem x r -> f x &amp;&amp;
-      <span class="logical">forall</span> i. 0 &lt;= i &lt; len r -> 
-        <span class="logical">exists</span> i'. i &lt;= i' &lt; len s -> 
-        (get r i) = (get s i') &amp;&amp;
-      filtered_order_sub r s *)</span>
-
-  <span class="contract">(*@ <span class="logical">predicate</span> filtered_order (r l: llist) = 
+  <span class="contract">(*@ <span class="logical">predicate</span> filtered_relative_order (r l: llist) = 
       <span class="logical">forall</span> i j. 0 &lt;= i &lt;= j &lt; len r -> 
 				<span class="logical">exists</span> i' j'. i &lt;= i' &lt;= j' &lt; len l ->
 				(get r i) = (get l i') &amp;&amp; (get r j) = (get l j') *)</span>
 
+  <span class="contract">(*@ <span class="logical">predicate</span> filtered_sub (f: elt -> <span class="logical">bool</span>) (r acc s: llist) =
+      0 &lt;= len r &lt;= len acc + len s &amp;&amp;
+      <span class="logical">forall</span> x: elt. mem x r -> f x &amp;&amp;
+      filtered_relative_order r s *)</span>
+
   <span class="contract">(*@ <span class="logical">predicate</span> filtered (f: elt -> <span class="logical">bool</span>) (r l: llist) = 
       0 &lt;= len r &lt;= len l &amp;&amp;
       <span class="logical">forall</span> x: elt. mem x r -> f x &amp;&amp;
-      <span class="logical">forall</span> i. 0 &lt;= i &lt; len r -> 
-        <span class="logical">exists</span> i'. i &lt;= i' &lt; len l -> 
-          (get r i) = (get l i') &amp;&amp;
-      filtered_order r l *)</span>
+      filtered_relative_order r l *)</span>
 
 	<span class="keyword">let</span> filter f l =
 		<span class="keyword">let</span> <span class="keyword">rec</span> aux acc f = <span class="keyword">function</span>
